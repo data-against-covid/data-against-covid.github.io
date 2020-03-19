@@ -33,6 +33,51 @@
         <br>
         <a href="https://discourse.data-against-covid.org" style="color: #065381">To pitch in, join our discourse!</a>
         </div>
+
+        <div>Do you...</div>
+
+        <div><button onclick="req_help_function()">Need help</button></div>
+        
+        <div id="need_help">
+        <p>Need someone to help analyse your data</p>
+        <p>Store or share your data</p>
+        <p>Require specific analytics done (for example, classification, regression, etc)</p>
+        <p>Want to discuss anything else?</p>
+
+        </div>
+        <script>
+        document.getElementById("need_help").style.display = "none";
+        function req_help_function() {
+          var needh = document.getElementById("need_help");
+          if (needh.style.display === "none") {
+        	needh.style.display = "block";
+          } else {
+        	needh.style.display = "none";
+          }
+        }
+        </script>
+
+        <div><button onclick="myFunction()">Offer help</button></div>
+
+        <div id="offer_help">
+        <p>Python, R, MATLAB</p>
+        <p>Bioinformatics, sequencing</p>
+        <p>Anything else</p>
+        </div>
+ 
+        <script>
+        document.getElementById("offer_help").style.display = "none";
+        function myFunction() {
+          var reqh = document.getElementById("offer_help");
+          if (reqh.style.display === "none") {
+        	reqh.style.display = "block";
+          } else {
+        	reqh.style.display = "none";
+          }
+        }
+        </script>
+
+
 		<!--  Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
 		<div class="icons-social">
 			<a target="_blank" href="https://discourse.data-against-covid.org"><i class="fab fa-discourse"></i></a>
@@ -47,5 +92,6 @@
 			<a target="_blank" href="https://codepen.io"><i class="fab fa-codepen"></i></a> -->
     </div>
 	</main>
+    
 </body>
 </html>
