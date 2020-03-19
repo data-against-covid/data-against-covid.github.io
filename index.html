@@ -22,6 +22,19 @@
 	<link rel="stylesheet" href="css/themes/white-grey.css">
 	<!-- <link rel="stylesheet" href="css/themes/white-red.css"> -->
 	<!-- <link rel="stylesheet" href="css/themes/yellow-black.css"> -->
+    <link rel="stylesheet" href="css/treelist.css">
+
+    <script>
+    function expand_or_collapse(element_name) {
+      var element = document.getElementById(element_name);
+      if (element.style.display === "none") {
+    	element.style.display = "block";
+      } else {
+    	element.style.display = "none";
+      }
+    }
+    </script>
+
 </head>
 <body>
 	<main>
@@ -31,52 +44,31 @@
         </center>
         <div class="tagline">We are a community of medical professionals and data scientists on a quest to defeat COVID-19.
         <br>
-        <a href="https://discourse.data-against-covid.org" style="color: #065381">To pitch in, join our discourse!</a>
+        <p>To pitch in, <a href="https://discourse.data-against-covid.org" style="color: #065381">join our discourse!</a></p>
         </div>
 
-        <div>Do you...</div>
+        <div class='treelist'>
+            <div><h5 class="treelist_heading">Do you...</h5></div>
 
-        <div><button onclick="req_help_function()">Need help</button></div>
-        
-        <div id="need_help">
-        <p>Need someone to help analyse your data</p>
-        <p>Store or share your data</p>
-        <p>Require specific analytics done (for example, classification, regression, etc)</p>
-        <p>Want to discuss anything else?</p>
+            <div>
+                <div class='treelist_button' onclick="expand_or_collapse('need_help')">Need help</div>
+                <div id="need_help" class='treelist_item' style='display:none'>
+                <p>Need someone to help analyse your data</p>
+                <p>Store or share your data</p>
+                <p>Require specific analytics done (for example, classification, regression, etc)</p>
+                <p>Want to discuss anything else?</p>
+                </div>
+            </div>
 
+            <div>
+                <div class='treelist_button' onclick="expand_or_collapse('offer_help')">Offer help</div>
+                <div id="offer_help" class='treelist_item' style='display:none'>
+                <p>Python, R, MATLAB</p>
+                <p>Bioinformatics, sequencing</p>
+                <p>Anything else</p>
+                </div>
+            </div>
         </div>
-        <script>
-        document.getElementById("need_help").style.display = "none";
-        function req_help_function() {
-          var needh = document.getElementById("need_help");
-          if (needh.style.display === "none") {
-        	needh.style.display = "block";
-          } else {
-        	needh.style.display = "none";
-          }
-        }
-        </script>
-
-        <div><button onclick="myFunction()">Offer help</button></div>
-
-        <div id="offer_help">
-        <p>Python, R, MATLAB</p>
-        <p>Bioinformatics, sequencing</p>
-        <p>Anything else</p>
-        </div>
- 
-        <script>
-        document.getElementById("offer_help").style.display = "none";
-        function myFunction() {
-          var reqh = document.getElementById("offer_help");
-          if (reqh.style.display === "none") {
-        	reqh.style.display = "block";
-          } else {
-        	reqh.style.display = "none";
-          }
-        }
-        </script>
-
 
 		<!--  Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
 		<div class="icons-social">
