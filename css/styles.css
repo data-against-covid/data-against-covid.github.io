@@ -79,6 +79,7 @@ main > .tagline {
   /*width: 256px;*/
   min-height: 130px;
   max-width: 200px;
+  cursor: pointer;
 }
 
 #rcorners1 {
@@ -90,6 +91,7 @@ main > .tagline {
   /*width: 256px;*/
   min-height: 130px;
   max-width: 200px;
+  cursor: pointer;
 }
 
 
@@ -100,6 +102,7 @@ main > .tagline {
   /*width: 256px;*/
   min-height: 130px;
   max-width: 200px;
+  cursor: pointer;
 }
 
 table {
