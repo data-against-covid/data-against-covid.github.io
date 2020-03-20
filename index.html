@@ -1,89 +1,101 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>Data Against Covid-19</title>
-
-	<link rel="icon" href="favicon.ico" type="image/png" />
-
-	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<!-- <link rel="stylesheet" href="css/themes/indigo-white.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/green-white.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/red-white.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/grey-white.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/white-indigo.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/white-blue.css"> -->
-	<link rel="stylesheet" href="css/themes/white-grey.css">
-	<!-- <link rel="stylesheet" href="css/themes/white-red.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/yellow-black.css"> -->
-    <link rel="stylesheet" href="css/treelist.css">
-
-    <script>
-    function expand_or_collapse(element_name) {
-      var element = document.getElementById(element_name);
-      if (element.style.display === "none") {
-    	element.style.display = "block";
-      } else {
-    	element.style.display = "none";
-      }
-    }
-    </script>
-
-</head>
-<body>
-	<main>
-		<div class="intro">Data Against Covid-19</div>
-        <center>
-            <img src="./img/logo.png" width=400px>
-        </center>
-        <div class="tagline">We are a community of medical professionals and data scientists on a quest to defeat COVID-19.
-        <br>
-        <p>To pitch in, <a href="https://discourse.data-against-covid.org" style="color: #065381">join our discourse!</a></p>
-        </div>
-
-        <div class='treelist'>
-            <div><h5 class="treelist_heading">Do you...</h5></div>
-
-            <div>
-                <div class='treelist_button' onclick="expand_or_collapse('need_help')">Need help</div>
-                <div id="need_help" class='treelist_item' style='display:none'>
-                <p>Need someone to help analyse your data</p>
-                <p>Store or share your data</p>
-                <p>Require specific analytics done (for example, classification, regression, etc)</p>
-                <p>Want to discuss anything else?</p>
-                </div>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data Against Covid-19</title>
+        <link rel="icon" href="favicon.ico" type="image/png" />
+        <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- <link rel="stylesheet" href="css/themes/indigo-white.css"> -->
+        <!-- <link rel="stylesheet" href="css/themes/green-white.css"> -->
+        <!-- <link rel="stylesheet" href="css/themes/red-white.css"> -->
+        <!-- <link rel="stylesheet" href="css/themes/grey-white.css"> -->
+        <!-- <link rel="stylesheet" href="css/themes/white-indigo.css"> -->
+        <!-- <link rel="stylesheet" href="css/themes/white-blue.css"> -->
+        <link rel="stylesheet" href="css/themes/white-grey.css">
+        <!-- <link rel="stylesheet" href="css/themes/white-red.css"> -->
+        <!-- <link rel="stylesheet" href="css/themes/yellow-black.css"> -->
+        <link rel="stylesheet" href="css/treelist.css">
+    </head>
+    <body>
+        <main>
+            <div class="intro">Data Against Covid-19</div>
+            <center>
+                <img src="./img/logo.png" width=400px>
+            </center>
+            <table align=center>
+                <td valign="top" align=center width=256px>
+                    <div id="rcorners0">
+                        <div class="tagline"> 
+                            I am a clinician in a European clinic and want to report local cases
+                        </div>
+                    </div>
+                    <img src="./img/arrow.png" width=18px>
+                    <div class="tagline"> 
+                        We recommend you checkout the <a href="https://www.leoss.net" style="color: #065381">LEOSS project</a>
+                    </div>
+                </td>
+                <td valign="top" align=center width=256px>
+                    <div id="rcorners1">
+                        <div class="tagline"> 
+                            <b>I have COVID-related data and questions, or know someone who does</b>
+                        </div>
+                    </div>
+                    <img src="./img/arrow.png" width=18px>
+                    <!-- <div id="rcorners0"> -->
+                    <div class="tagline"> 
+                        Join our discourse and simply <a href="https://discourse.data-against-covid.org/c/i-have-data" style="color: #065381">post a message here</a>
+                    </div>
+                    </a>
+                </td>
+                <td valign="top" align=center width=256px>
+                    <div id="rcorners1">
+                        <div class="tagline"> 
+                            <b>I am a data scientist, looking to donate my expertise</b>
+                        </div>
+                    </div>
+                    <img src="./img/arrow.png" width=18px>
+                    <div class="tagline"> 
+                        Join our discourse, <a href="https://discourse.data-against-covid.org/t/volunteer-data-scientists-please-introduce-yourself-here" style="color: #065381">introduce yourself  here </a> and look for open tasks
+                    </div>
+                    </a>
+                </td>
+                <td valign="top" align=center width=256px>
+                    <div id="rcorners0">
+                        <div class="tagline"> 
+                            I am a member of the general public and offer crowdsourcing work
+                        </div>
+                    </div>
+                    <img src="./img/arrow.png" width=18px>
+                    <div class="tagline"> 
+                        Join our discourse and introduce yourself <a href="https://discourse.data-against-covid.org/t/volunteer-citizens-please-introduce-yourself-here" style="color: #065381">here</a>. We will let you know when there is work for you
+                    </div>
+                </td>
+            </table>
+            <br>
+            <div class="tagline">
+                We are a community of medical professionals and data scientists on a quest to defeat COVID-19.
+                <br>
+                <p>To pitch in, <a href="https://discourse.data-against-covid.org" style="color: #065381">join our discourse!</a></p>
             </div>
-
-            <div>
-                <div class='treelist_button' onclick="expand_or_collapse('offer_help')">Offer help</div>
-                <div id="offer_help" class='treelist_item' style='display:none'>
-                <p>Python, R, MATLAB</p>
-                <p>Bioinformatics, sequencing</p>
-                <p>Anything else</p>
-                </div>
+            <!--  Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
+            <div class="icons-social">
+                <a target="_blank" href="https://discourse.data-against-covid.org"><i class="fab fa-discourse"></i></a>
+                <!-- <a target="_blank" href="https://github.com/flexdinesh"><i class="fab fa-github"></i></a> -->
+                <a target="_blank" href="https://twitter.com/DataVSCovid"><i class="fab fa-twitter"></i></a>
+                <a target="_blank" href="mailto:data.against.covid@gmail.com"><i class="fas fa-mail-bulk"></i></a>
+                <!--            <a target="_blank" href="https://stackoverflow.com/story/flexdinesh"><i class="fab fa-stack-overflow"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/dineshpandiyan"><i class="fab fa-linkedin"></i></a>
+                    <a target="_blank" href="https://medium.com/@flexdinesh"><i class="fab fa-medium"></i></a>
+                    <a target="_blank" href="https://www.freecodecamp.org"><i class="fab fa-free-code-camp"></i></a>
+                    <a target="_blank" href="https://www.behance.net"><i class="fab fa-behance"></i></a>
+                    <a target="_blank" href="https://codepen.io"><i class="fab fa-codepen"></i></a> -->
             </div>
-        </div>
-
-		<!--  Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
-		<div class="icons-social">
-			<a target="_blank" href="https://discourse.data-against-covid.org"><i class="fab fa-discourse"></i></a>
-             <!-- <a target="_blank" href="https://github.com/flexdinesh"><i class="fab fa-github"></i></a> -->
- 			<a target="_blank" href="https://twitter.com/DataVSCovid"><i class="fab fa-twitter"></i></a>
-			<a target="_blank" href="mailto:data.against.covid@gmail.com"><i class="fas fa-mail-bulk"></i></a>
-<!-- 			<a target="_blank" href="https://stackoverflow.com/story/flexdinesh"><i class="fab fa-stack-overflow"></i></a>
-			<a target="_blank" href="https://www.linkedin.com/in/dineshpandiyan"><i class="fab fa-linkedin"></i></a>
-			<a target="_blank" href="https://medium.com/@flexdinesh"><i class="fab fa-medium"></i></a>
-			<a target="_blank" href="https://www.freecodecamp.org"><i class="fab fa-free-code-camp"></i></a>
-			<a target="_blank" href="https://www.behance.net"><i class="fab fa-behance"></i></a>
-			<a target="_blank" href="https://codepen.io"><i class="fab fa-codepen"></i></a> -->
-    </div>
-	</main>
-    
-</body>
+        </main>
+    </body>
 </html>
+
