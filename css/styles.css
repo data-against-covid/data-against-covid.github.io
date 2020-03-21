@@ -111,3 +111,21 @@ table {
   margin-top: 64px;
   margin-bottom: 64px;
 }
+
+a:link, a:visited {
+  /*background-color: #ffffff;*/
+  /*color: white;*/
+  /*padding: 14px 25px;*/
+  text-align: center;
+  /*text-decoration: none;*/
+  display: inline-block;
+  font-weight: bold;
+    text-decoration:underline;
+
+
+}
+
+a:hover, a:active {
+  background-color: #ffffff;
+  color: #ffffff;
+}
