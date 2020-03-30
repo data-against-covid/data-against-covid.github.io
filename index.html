@@ -28,10 +28,12 @@
 <script type="text/javascript">
 function toggle_visibility(id) {
    var e = document.getElementById(id);
-   if(e.style.display == 'block')
+   if(e.style.display == 'block'){
       e.style.display = 'none';
-   else
+   }
+   else{
       e.style.display = 'block';
+   }
 }
 </script>
 
@@ -71,7 +73,7 @@ function toggle_visibility(id) {
                     </div>
                     <img src="./img/arrow.png" width=18px>
                     <div class="tagline"> 
-                        <a href="#gform" style="color: #55ad4f" onclick="toggle_visibility('gform');">Fill in this form</a> or join our discourse and simply <a href="https://discourse.data-against-covid.org" style="color: #55ad4f">post a message here</a>.
+                        <a href="#" style="color: #55ad4f" onclick="toggle_visibility('gform');">Fill in this form</a> or join our discourse and simply <a href="https://discourse.data-against-covid.org" style="color: #55ad4f">post a message here</a>.
                     </div><br>
 <br>
 <br>
