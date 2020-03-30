@@ -25,6 +25,16 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+<script type="text/javascript">
+function toggle_visibility(id) {
+   var e = document.getElementById(id);
+   if(e.style.display == 'block')
+      e.style.display = 'none';
+   else
+      e.style.display = 'block';
+}
+</script>
+
     </head>
     <body>
         <main>
@@ -61,7 +71,7 @@
                     </div>
                     <img src="./img/arrow.png" width=18px>
                     <div class="tagline"> 
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe_PH8ZCy6qt1J9Q4kQV1jCBeShgSTMrM_nqgTr4i6EXbUOYg/viewform?usp=sf_link" style="color: #55ad4f">Fill in this form</a> or join our discourse and simply <a href="https://discourse.data-against-covid.org" style="color: #55ad4f">post a message here</a>.
+                        <a href="#" style="color: #55ad4f" onclick="toggle_visibility('gform');">Fill in this form</a> or join our discourse and simply <a href="https://discourse.data-against-covid.org" style="color: #55ad4f">post a message here</a>.
                     </div><br>
 <br>
 <br>
@@ -99,6 +109,10 @@
     </div>
   </div>
 </div>
+
+<center>
+    <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSe_PH8ZCy6qt1J9Q4kQV1jCBeShgSTMrM_nqgTr4i6EXbUOYg/viewform?embedded=true" width="700" height="1550" frameborder="0" marginheight="0" marginwidth="0" style='display: none;'>Wird geladen…</iframe>
+</center>
 
             <div class="tagline">
                  <a href="https://discourse.data-against-covid.org/t/list-of-pis-supporting-this-endeavour" style="color: #065381">We</a> are a community of medical professionals, life scientists and data scientists on a quest to defeat COVID-19.
